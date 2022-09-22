@@ -17,7 +17,7 @@ const Feed = () => {
     <Box sx={{height:"100%",width:"100%"}} Id="Feed_Your_Dog">
 
       {/* heading  */}
-    <Typography  sx={{textAlign:"center",fontSize:'60px',color: "#AA2D29",fontFamily:'Poppins',fontWeight:"bolder",
+    <Typography  sx={{textAlign:"center",fontSize:'4em',color: "#AA2D29",fontFamily:'Poppins',fontWeight:"bolder",
   display:{
     mobile:'none',
     tablet: "block",
@@ -29,7 +29,7 @@ const Feed = () => {
    
     <Box container  sx={{height:'100%',display:'flex', width:"100%",
     
-    marginTop:'30px',marginBottom:"20px",fontFamily:'Poppins',
+    marginTop:'10vh',marginBottom:"5vh",fontFamily:'Poppins',
    flexDirection:{
     mobile: "column",
     tablet: "row",
@@ -49,22 +49,13 @@ const Feed = () => {
 
         {/*image box   */}
 
-   <Box sx={{flex:1,display:"flex",justifyContent:{desktop:'center',mobile:"space-evenly"}, 
-        flexDirection:{
-      mobile: "row",
-      tablet: "row",
-      desktop: "row"
-    },
-    alignItems:{
-      mobile: "center",
-     tablet:'center',
-     desktop:"center"
-      
-    }}}> 
+   <Box sx={{flex:1,display:"flex",justifyContent:"center", 
+        
+    alignItems:"center"}}> 
  
       {/* image box (left) 1*/}
 
- <Box sx={{ marginRight:{desktop:"10px",tablet:"5px",mobile:"5px"},display: "flex",
+ <Box sx={{ marginRight:"5%",display: "flex",
       justifyContent:{
         desktop:"center",
         tablet:'center',
@@ -74,15 +65,15 @@ const Feed = () => {
        tablet:'center',
        desktop:"center"
         
-      },marginLeft:'30px'}}> 
+      }, marginLeft:"5%"}}> 
 
       {/* image */}
           <Box
         component="img"
         sx={{
           
-          height: { desktop:"200px",mobile:"100px",tablet:"150px" },
-          width: { desktop:"180px",mobile:"80px",tablet:"130px" },
+          height: { desktop:"40vh",tablet:"auto",mobile:"17vh"},
+          width: { desktop:"30vh",mobile:"10vh",tablet:"20vh" },
         }}
         alt=""
         src="../Assests//Rectangle 47.jpg"
@@ -110,8 +101,8 @@ const Feed = () => {
         component="img"
         sx={{
           
-          height: { desktop:"200px",mobile:"100px",tablet:"150px" },
-          width: { desktop:"260px",mobile:"80px",tablet:"200px" },
+          height:{laptop:"auto",tablet:"20vh",mobile:"17vh"},
+          width: { desktop:"45vh",mobile:"12vh",tablet:"30vh",laptop:"35vh" },
          padding: "10px"
         }}
         alt="The house from the offer."
@@ -123,8 +114,8 @@ const Feed = () => {
         component="img"
         sx={{
           
-          height: { desktop:"200px",mobile:"100px",tablet:"160px" },
-          width: { desktop:"220px",mobile:"80px",tablet:"130px" },
+          height:{laptop:"auto",tablet:"23vh",mobile:"17vh"},
+          width: { desktop:"35vh",mobile:"12vh",tablet:"23vh",laptop:"30vh" },
           padding: "10px"
         }}
         alt="The house from the offer."
@@ -149,18 +140,19 @@ const Feed = () => {
 
         <Typography  sx={{ 
           fontSize:{
-            desktop:"30px",
-            tablet:"25px",
-            mobile:"20px"},
-            marginTop:{mobile:"20px"},fontFamily:"Poppins",
-            fontWeight:"Bolder",marginBottom:"25px"
+            desktop:"2rem",
+            tablet:"1.75rem",
+            mobile:"1.5rem"},
+            marginTop:{mobile:"10%"},fontFamily:"Poppins",
+            fontWeight:"Bolder",
+            marginBottom:{laptop:"5%",tablet:"4%",mobile:"3%"}
             }}>
               Nurture and nourish
         </Typography>
 
         {/* content */}
-          <Box sx={{width:{desktop:"400px",tablet:"310px",mobile:"260px"},alignItems:"center"}}>
-          <Typography variant='subtitle' sx={{fontSize:{desktop:"18px",tablet:"14px",mobile:"10px"},textAlign:"center"}}>
+          <Box sx={{width:"55%",alignItems:"center"}}>
+          <Typography variant='subtitle' sx={{fontSize:{desktop:"1rem",tablet:"0.75rem",mobile:"0.5rem"},textAlign:"center"}}>
             Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut l
             abore et dolore magna aliqua. Ut enim ad minim v
              eniam, quis nostrud exercitation uecat  
@@ -169,10 +161,7 @@ const Feed = () => {
          
           
         <Typography variant='p' sx={{
-           fontSize:{
-            desktop:"18px",
-           tablet:"14px",
-           mobile:"10px"}, marginTop:'20px'}}>
+          fontSize:{desktop:"1rem",tablet:"0.75rem",mobile:"10px"}, marginTop:'2%'}}>
          Try out the amazing options!
       
         </Typography>

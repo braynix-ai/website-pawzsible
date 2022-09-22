@@ -12,16 +12,16 @@ export const Newsletter = () => {
         <Box sx={{paddingLeft:"20px"}}>
 
           {/* heading */}
-        <Typography sx={{fontSize:{desktop:"medium",tablet:"15px",mobile:"10px"},
+        <Typography sx={{fontSize:{desktop:"1rem",tablet:"0.75rem",mobile:"0.5rem"},
         display:{desktop:"block",tablet:"block",mobile:"none"}}}>
           Newsletter
           </Typography>
           </Box>
 
         {/* subscribe mail  */}
-        <Box sx={{display:"flex", width:{desktop:"450px",mobile:"350px",tablet:"400px"},justifyContent:"space-around",alignItems:"center"}}>
+        <Box sx={{display:"flex", width:{desktop:"35%",mobile:"80%",tablet:"50%"},justifyContent:"space-around",alignItems:"center"}}>
 
-        <Typography sx={{fontSize:{desktop:"medium",tablet:"15px",mobile:"10px"}}}>
+        <Typography sx={{fontSize:{desktop:"1rem",tablet:"0.75rem",mobile:"0.5rem"}}}>
           Subscribe Newsletter </Typography>
 
         {/* input field for email */}
@@ -29,7 +29,7 @@ export const Newsletter = () => {
           label="Enter Your E-mail"
           id="outlined-size-small"
          
-            InputProps={{ style: { height: "30px"}  }}
+            InputProps={{ style: { height: "5vh"}  }}
             InputLabelProps={{ style: { fontSize:"10px" } }}
          
           size="small"

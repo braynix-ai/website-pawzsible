@@ -20,7 +20,7 @@ const Paws = () => {
 
        {/* heading paw us */}
          <Typography sx={{textAlign:"center",fontFamily:"Poppins",fontWeight:"bolder",
-         fontSize:{laptop:"40px",tablet:"35px",mobile:"25px"},color:"#001A80"}}>
+        fontSize:{mobile:"1.5rem",tablet:"2.5rem",desktop:"3rem"},color:"#001A80"}}>
           Our Paws
           </Typography>
 
@@ -32,27 +32,21 @@ const Paws = () => {
 
       {/* image container */}
         <CardContent sx={{display:"flex",justifyContent:"center",fontFamily:"Poppins"}}>
-      <Box sx={{height:{desktop:"130px",tablet:"100px",mobile:"80px"}, 
-      width:{desktop:"130px",tablet:"100px",mobile:"80px"},
+      <Box sx={{height:{desktop:"25vh",tablet:"20vh",mobile:"15vh"}, 
+      width:{desktop:"25vh",tablet:"20vh",mobile:"15vh"},
       backgroundColor:"#D9D9D9",borderRadius:"50%"}}/>
       </CardContent>
 
       {/* details container */}
       <CardContent sx={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
         <Typography
-        sx={{fontSize:{desktop:"18px",
-        tablet:"15px",
-        mobile:"10px"}}}> {value.title}</Typography>
-        <Typography variant="body2" sx={{fontSize:{desktop:"15px",
-        tablet:"15px",
-        mobile:"10px"}}}>
+        sx={{fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}> {value.title}</Typography>
+        <Typography variant="body2" sx={{fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}>
        
         {value.desc}
 
         </Typography>
-        <Typography sx={{fontSize:{desktop:"15px",
-        tablet:"13px",
-        mobile:"10px"}}}> {value.company}</Typography>
+        <Typography sx={{fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}> {value.company}</Typography>
       </CardContent>
      
     </Card>

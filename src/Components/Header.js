@@ -57,7 +57,7 @@ const Header = () => {
             </>
           ) : (
             <>
-               <Box sx={{alignItems:'center', width:"900px",marginLeft:'20px',display:'flex',justifyContent:'space-around',fontFamily:"poppins"}} >
+               <Box sx={{alignItems:'center', width:"90%",marginLeft:'20px',display:'flex',justifyContent:'space-around',fontFamily:"poppins"}} >
                 {pages2.map((page,index) => (
                 <Button sx={{color:"white"}} key={index}>
                 <a style={{textDecoration:'none',color:'black'}} href={`${page.href}`}>{page.title}</a>

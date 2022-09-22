@@ -13,7 +13,7 @@ const Brands = () => {
     <BrandContainer>
    
    {/* heading */}
-    <Typography sx={{fontSize:{desktop:'35px',mobile:"15px",tablet:"30px"},fontFamily:'Poppins',fontWeight:"800"}}>Popular Brands</Typography>
+    <Typography sx={{fontSize:{desktop:'2rem',mobile:"1rem",tablet:"1.75rem"},fontFamily:'Poppins',fontWeight:"800"}}>Popular Brands</Typography>
 
     {/* brands container */}
     
@@ -24,9 +24,8 @@ const Brands = () => {
     <Box
         component="img"
         sx={{
-          
-          height:{mobile:"30px",tablet:"50px",desktop:"60px"},
-          width:{mobile:"80px",desktop:"120px",tablet:"100px"}
+          height:{mobile:"8vh",tablet:'12vh',desktop:"15vh"},
+          width:{mobile:"12vh",tablet:"16vh",desktop:"20vh"}
         }}
         alt=""
         src='../Assests/Brand3.png' />
@@ -37,9 +36,8 @@ const Brands = () => {
         component="img"
         sx={{
           
-          height:{mobile:"30px",tablet:"50px",desktop:"50px"},
-         
-          width:{mobile:"70px",desktop:"110px",tablet:"100px"}
+         height:{mobile:"8vh",tablet:'11vh',desktop:"13vh"},
+         width:{mobile:"12vh",tablet:"16vh",desktop:"20vh"}
         }}
         alt=""
         src='../Assests/Brand2.png'
@@ -51,9 +49,8 @@ const Brands = () => {
         component="img"
         sx={{
           
-          height:{mobile:"30px",tablet:"50px",desktop:"50px"},
-         
-          width:{mobile:"80px",desktop:"120px",tablet:"100px"}
+          height:{mobile:"7vh",tablet:'10vh',desktop:"13vh"},
+          width:{mobile:"12vh",tablet:"16vh",desktop:"20vh"}
         }}
         alt=""
         src='../Assests/Brand1.png'

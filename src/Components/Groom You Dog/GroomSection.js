@@ -29,11 +29,11 @@ export default function GroomSection() {
       tablet:'row',
       desktop:'row'
      },
-    padding:'20px',
-     paddingLeft:'40px',
-    marginTop:'30px',
+    padding:'5%',
+     paddingLeft:'5%',
+    
     fontFamily:'Poppins',
-    marginBottom:'50px',
+    marginBottom:'5%',
     }}>
 
       {/* image container */}
@@ -45,9 +45,9 @@ export default function GroomSection() {
         component="img"
         sx={{
           
-          height: { desktop:"540px",mobile:"280px",tablet:"510px" },
+          height:{laptop:"auto",tablet:"auto",mobile:"50vh"},
          
-          width:{mobile:"100%",desktop:"400px",tablet:"350px"}
+          width:{mobile:"100vh",desktop:"75vh",tablet:"65vh"}
         }}
        
         alt=""
@@ -58,10 +58,10 @@ export default function GroomSection() {
 
           {/* content container */}
 
-        <Box sx={{ flex:{desktop:"1.25", tablet:"1"},display:"flex", flexDirection:"column",alignItems:{desktop:"flex-start",tablet:"flex-start",mobile:"center"},marginTop:{mobile:"20px"}}}>
+        <Box sx={{ flex:{desktop:"1.25", tablet:"1.25"},display:"flex", flexDirection:"column",alignItems:{desktop:"flex-start",tablet:"flex-start",mobile:"center"},marginTop:{mobile:"5%"},marginLeft:"3%"}}>
 
           {/* heading */}
-        <Typography sx={{fontSize:{laptop:'50px',tablet:"40px",mobile:"30px"},color: "#AA2D29",fontFamily:'Poppins',marginBottom:'10px',fontWeight:"bolder",
+        <Typography sx={{fontSize:{desktop:"4rem",laptop:"3rem",tablet:"2rem"},color: "#AA2D29",fontFamily:'Poppins',fontWeight:"bolder",
       display:{desktop:"block",tablet:"block",mobile:"none"}}}>
         Groom Your Dog
         </Typography>
@@ -71,20 +71,20 @@ export default function GroomSection() {
 
           {/* cards */}
           {data.map((value,index)=>(
-          <Card sx={{ display: 'flex',marginTop:'10px',width:{
-            mobile:"100%",tablet:"80%",desktop:"70%"
-          },fontFamily:'Poppins',borderRadius:'13px',boxShadow:'none' , height:'120px'}}>
+          <Card sx={{ display: 'flex',marginTop:'2%',width:{
+            mobile:"90%",tablet:"80%",desktop:"70%"
+          },fontFamily:'Poppins',borderRadius:'13px',boxShadow:'none' , height:'30%'}}>
 
             {/* card image */}
           <CardMedia
         component="img"
-        sx={{ width:{mobile:"100px",desktop:"160px",tablet:"140px"},height:{desktop:"110px",mobile:"90px",height:"105"},borderRadius:"10px" }}
+        sx={{ width:{mobile:"30vh",desktop:"40vh",tablet:"35vh"},height:{desktop:"18vh",mobile:"15vh",tablet:"16vh"},borderRadius:"10px" }}
         image={value.img} />
 
       {/* card content */}
        <Box sx={{display:'flex'}}>
          <CardContent sx={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start"}}> 
-          <Typography component="div" variant="p" sx={{fontSize:{mobile:"12px",desktop:"15px",tablet:"12px"}}} >
+          <Typography component="div" variant="p" sx={{fontSize:{mobile:"10px",desktop:"15px",tablet:"12px"}}} >
             {value.desc}
             </Typography>
          </CardContent>

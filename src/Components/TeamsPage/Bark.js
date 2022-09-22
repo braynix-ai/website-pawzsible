@@ -10,10 +10,7 @@ const Bark = () => {
 
       {/* heading bark at us */}
     <Typography sx={{textAlign:"center",fontFamily:"Poppins",
-    fontWeight:"bolder",fontSize:{
-      laptop:"40px",
-      tablet:"35px",
-      mobile:"25px"},
+    fontWeight:"bolder",fontSize:{mobile:"1.5rem",tablet:"2.5rem",desktop:"3rem"},
       color:"#001A80"}}>
         Bark At Us
       </Typography>
@@ -24,7 +21,7 @@ const Bark = () => {
         <SupportContainer>
 
           {/* title */}
-           <Typography component="div" sx={{fontFamily:"Poppins",fontWeight:"bold",marginBottom:{desktop:"30px",tablet:"20px",mobile:"15px"},fontSize:{mobile:"10px",tablet:"13px",desktop:"15px"}}}>
+           <Typography component="div" sx={{fontFamily:"Poppins",fontWeight:"bold",marginBottom:{desktop:"30px",tablet:"20px",mobile:"15px"},fontSize:{mobile:"0.75rem",tablet:"1rem",desktop:"1rem"}}}>
             We would love to hear from you!
             </Typography>
 
@@ -34,20 +31,18 @@ const Bark = () => {
             desktop:"30px",
             tablet:"20px",
             mobile:"10px"},
-            fontSize:{mobile:"10px",tablet:"13px",desktop:"15px"}}}>
+            fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}>
             For support related queries write to: support@xyz.com
            </Typography>
 
             {/* mail id */}
            <Typography sx={{fontFamily:"Poppins",marginBottom:"20px",
-           fontSize:{mobile:"10px",
-           tablet:"13px",
-           desktop:"15px"}}}>
+           fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}>
             For support related queries write to: support@xyz.com
            </Typography>
 
             {/* call details*/}
-           <Typography sx={{fontFamily:"Poppins",marginBottom:"20px",fontSize:{mobile:"10px",tablet:"13px",desktop:"15px"}}}>
+           <Typography sx={{fontFamily:"Poppins",marginBottom:"20px",fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}>
            or Call us on:
            <br/>
           +91 1234567890
@@ -62,7 +57,7 @@ const Bark = () => {
         {/* address and map container */}
 
         <AddressContainer>
-            <Typography sx={{marginBottom:"10px",fontSize:{mobile:"10px",tablet:"13px",desktop:"15px"}}}>
+            <Typography sx={{marginBottom:"10px",fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}>
               Office Address
           </Typography>
 
@@ -71,8 +66,8 @@ const Bark = () => {
         component="img"
         sx={{
            
-        width:{desktop:"350px",mobile:"180px",tablet:"260px"},
-       height:{desktop:"200px",mobile:"130px",tablet:"100px"}
+        width:{desktop:"60vh",mobile:"27vh",tablet:"45vh"},
+       height:{desktop:"40vh",mobile:"20vh",tablet:"30vh"}
          
         }}
         alt=""
@@ -81,7 +76,7 @@ const Bark = () => {
 
       {/* address */}
       <Box sx={{width:"100px"}}>
-    <Typography sx={{fontSize:{mobile:"10px",tablet:"13px",desktop:"15px"}}}>
+    <Typography sx={{fontSize:{mobile:"0.5rem",tablet:"0.75rem",desktop:"1rem"}}}>
     Address:<br/>xzxefefe......
     </Typography>
       </Box>

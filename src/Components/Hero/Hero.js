@@ -19,8 +19,8 @@ const Hero = () => {
         
        <Slider {...settings}>
          
-        <img src="../Assests/gif1.gif" style={{width:'100%',height:'400px'}}/>
-        <img src="../Assests/gif2.gif" style={{width:'100%',height:'400px'}}/>
+        <img src="../Assests/gif1.gif" style={{width:'100%'}}/>
+        <img src="../Assests/gif2.gif" style={{width:'100%'}}/>
         </Slider>
        
     </Box>

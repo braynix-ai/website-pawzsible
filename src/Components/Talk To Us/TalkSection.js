@@ -10,7 +10,7 @@ function TalkSection() {
   <ThemeProvider theme={theme}>
  <Content>
   <Box sx={{textAlign:'center',margin:"30px 0",fontFamily:'poppins',padding:'10px'}} >
-    <Typography component="div" variant="h4" sx={{fontWeight:'bolder',marginBottom:'20px',fontSize:{mobile:"25px",tablet:"30px",desktop:"40px"}}}>
+    <Typography component="div" variant="h4" sx={{fontWeight:'bolder',marginBottom:'3%',fontSize:{mobile:"25px",tablet:"30px",desktop:"40px"}}}>
           Talk to Us
 
           </Typography>
@@ -34,7 +34,7 @@ Healthy!</Title>
         component="img"
         sx={{
           
-          height: { desktop:"25px",mobile:"18px",tablet:"20px" },
+          height: { desktop:"25px",mobile:"3vh",tablet:"20px" },
          
           width:{mobile:"18px",desktop:"25px",tablet:"20px"}
         }}
@@ -62,9 +62,9 @@ Healthy!</Title>
         component="img"
         sx={{
           
-          height: { desktop:"25px",mobile:"18px",tablet:"20px" },
+          height: { desktop:"5vh",mobile:"3.5vh",tablet:"4.5vh" },
          
-          width:{mobile:"18px",desktop:"25px",tablet:"20px"}
+          width:{mobile:"3vh",desktop:"5vh",tablet:"4vh"}
         }}
         alt=""
         src='../Assests/Guarantee.png'/>
@@ -78,9 +78,9 @@ Healthy!</Title>
         component="img"
         sx={{
           
-          height: { desktop:"25px",mobile:"18px",tablet:"20px" },
+          height: { desktop:"5vh",mobile:"3.5vh",tablet:"4.5vh" },
          
-          width:{mobile:"18px",desktop:"25px",tablet:"20px"}
+          width:{mobile:"3vh",desktop:"5vh",tablet:"4vh"}
         }}
         alt=""
         src='../Assests/Note.png'/>
@@ -99,9 +99,9 @@ Healthy!</Title>
         component="img"
         sx={{
           
-          height: { desktop:"380px",mobile:"200px",tablet:"280px" },
+          height:"auto",
          
-          width:{mobile:"200px",desktop:"420px",tablet:"300px"}
+          width:{mobile:"40vh",desktop:"70vh",tablet:"50vh"}
         }}
         alt=""
         src='../Assests/image 26.png'/>

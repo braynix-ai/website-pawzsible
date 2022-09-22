@@ -4,11 +4,9 @@ import { theme } from '../Styles'
 const Story = () => {
   return (
     <ThemeProvider theme={theme}>
-    <Box sx={{width:"100%",display:'flex',justifyContent:'center',alignItems:'center',height:'500px',paddingTop:'15%',height:"100%",paddingBottom:"15%"}}>
+    <Box sx={{width:"100%",display:'flex',justifyContent:'center',alignItems:'center',height:'50%',paddingTop:'15%',height:"100%",paddingBottom:"15%"}}>
         <Box sx={{height:'100%',
-        width:{desktop:'420px',
-          laptop:"400px",
-          mobile:"350px" },textAlign:'center'}}>
+        width:"50%",textAlign:'center'}}>
 
           {/* heading */}
             <Typography variant='h3'

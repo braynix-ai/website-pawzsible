@@ -29,8 +29,8 @@ const Value = () => {
         component="img"
         sx={{
             flex:1,
-          height:{desktop: "540px",mobile:'210px',tablet:"480px"},
-          width:{desktop: "440px",mobile:'200px',tablet:"250px",},
+          height:{desktop: "90vh",mobile:'40vh',tablet:"65vh"},
+          width:{desktop: "40vh",mobile:'35vh',tablet:"40vh",},
          
         }}
         alt=""
@@ -42,11 +42,11 @@ const Value = () => {
           {data.map((value,index)=>(
           <Card sx={{ width:{desktop:"60%",laptop:"50%",tablet:"60%",mobile:"100%"}
           ,fontFamily:'Poppins',borderRadius:'13px',boxShadow:'none',
-          height:{mobile:"60px",desktop:"180px",tablet:"140px"}}}>
+          height:{mobile:"15vh",desktop:"30vh",tablet:"20vh"}}}>
          
       
          <CardContent> 
-          <Typography component="div" variant="p" sx={{fontSize:{mobile:"7px",desktop:"18px",tablet:"15px"}}} >
+          <Typography component="div" variant="p" sx={{fontSize:{mobile:"0.5rem",desktop:"1rem",tablet:"0.75rem"}}} >
          {value.desc}
 
           </Typography>

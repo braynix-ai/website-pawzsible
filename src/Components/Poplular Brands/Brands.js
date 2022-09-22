@@ -17,15 +17,15 @@ const Brands = () => {
 
     {/* brands container */}
     
-    <Box sx={{display:'flex',justifyContent:'space-around',width:'60%'}}>
+    <Box sx={{display:'flex',justifyContent:'space-around',width:'60%',alignItems:"center"}}>
 
       {/* brand image 1 */}
 
     <Box
         component="img"
         sx={{
-          height:{mobile:"8vh",tablet:'12vh',desktop:"15vh"},
-          width:{mobile:"12vh",tablet:"16vh",desktop:"20vh"}
+          height:{mobile:"6vh",tablet:'12vh',desktop:"15vh"},
+          width:{mobile:"6vh",tablet:"16vh",desktop:"20vh"}
         }}
         alt=""
         src='../Assests/Brand3.png' />
@@ -36,8 +36,8 @@ const Brands = () => {
         component="img"
         sx={{
           
-         height:{mobile:"8vh",tablet:'11vh',desktop:"13vh"},
-         width:{mobile:"12vh",tablet:"16vh",desktop:"20vh"}
+         height:{mobile:"5vh",tablet:'11vh',desktop:"13vh"},
+         width:{mobile:"9vh",tablet:"16vh",desktop:"20vh"}
         }}
         alt=""
         src='../Assests/Brand2.png'
@@ -49,8 +49,8 @@ const Brands = () => {
         component="img"
         sx={{
           
-          height:{mobile:"7vh",tablet:'10vh',desktop:"13vh"},
-          width:{mobile:"12vh",tablet:"16vh",desktop:"20vh"}
+          height:{mobile:"4vh",tablet:'10vh',desktop:"13vh"},
+          width:{mobile:"10vh",tablet:"16vh",desktop:"20vh"}
         }}
         alt=""
         src='../Assests/Brand1.png'

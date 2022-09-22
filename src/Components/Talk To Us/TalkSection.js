@@ -101,7 +101,7 @@ Healthy!</Title>
           
           height:"auto",
          
-          width:{mobile:"40vh",desktop:"70vh",tablet:"50vh"}
+          width:{mobile:"30vh",desktop:"70vh",tablet:"50vh"}
         }}
         alt=""
         src='../Assests/image 26.png'/>

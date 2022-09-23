@@ -2,7 +2,7 @@ import {
   useMediaQuery,
   useTheme
 } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./NavBar";
 
 // Navbar

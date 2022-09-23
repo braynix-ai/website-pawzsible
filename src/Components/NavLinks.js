@@ -111,7 +111,6 @@
 
 /** @jsxImportSource theme-ui */
 import Link from '@mui/material/Link'
-import { useBreakpointIndex } from '@theme-ui/match-media'
 import { Button, Flex } from './components/motionComponents'
 
 const styles = {

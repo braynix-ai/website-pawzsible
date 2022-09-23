@@ -7,9 +7,13 @@ import { ThemeProvider } from '@mui/system';
 import Typography from '@mui/material/Typography';
 
 import {theme} from "../Feed Your Dog/Styles"
-import { data } from '../Groom You Dog/GroomData';
-import { Title,ValueContainer } from './ValueStyles';
 
+const data=[
+  {desc:"Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut l "},
+  {desc:"Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut l "},
+  {desc:"Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut l "},
+
+]
 const Value = () => {
   return (
    <>
@@ -17,48 +21,86 @@ const Value = () => {
        <Box sx={{
         width:'100%',
         height:"100%",
-        marginBottom:'50px'
+        marginBottom:'10%'
        }}>
         <Container>
+
+          {/* title */}
        
-       <Title>Our Values</Title>
-      <ValueContainer>
+       <Typography sx={{
+         fontSize:{desktop:'3.5rem',
+        tablet:"3rem",mobile:"2rem"},
+         marginBottom:'30px',
+         color: "#001A80",
+         fontFamily:'Poppins',
+         fontWeight:'bolder',
+         textAlign:"center"
+       }}>
+        Our Values
+       </Typography>
+
+
+
+      <Box sx={{ width:'100%',
+    display:'flex',
+    justifyContent:'space-around',
+    alignItems:{desktop:"flex-start",tablet:"center",mobile:"center"},
+    flexDirection:{
+      desktop:"row",
+      laptop:"row",
+      tablet:"column",
+      mobile:"column"
+    }}}>
 
         {/* image box */}
+        <Box sx={{ flex:1,
+   display:"flex",
+   justifyContent:"center",alignItems:"center"}}>
       <Box
         component="img"
         sx={{
-            flex:1,
-          height:{desktop: "90vh",mobile:'40vh',tablet:"65vh"},
-          width:{desktop: "40vh",mobile:'35vh',tablet:"40vh",},
+          
+          height:{desktop: "65vh", laptop:"60vh",mobile:'40vh',tablet:"50vh"},
+           width:{mobile:"100%",desktop:"70%",
+          tablet:"80%"}
          
         }}
         alt=""
         src="../Assests/valueimg.png"
       />
-     
-        <Box sx={{ flex:1.5,marginLeft:{desktop:'30px',mobile:"5px"}}}>
-          
-          {data.map((value,index)=>(
-          <Card sx={{ width:{desktop:"60%",laptop:"50%",tablet:"60%",mobile:"100%"}
-          ,fontFamily:'Poppins',borderRadius:'13px',boxShadow:'none',
-          height:{mobile:"15vh",desktop:"30vh",tablet:"20vh"}}}>
-         
-      
-         <CardContent> 
-          <Typography component="div" variant="p" sx={{fontSize:{mobile:"0.5rem",desktop:"1rem",tablet:"0.75rem"}}} >
-         {value.desc}
+      </Box>
 
-          </Typography>
-         
-        </CardContent>
+
+      {/* card container */}
+
+      <Box sx={{ flex:1,flex:{desktop:"1.25", tablet:"1.25"},display:"flex", flexDirection:"column",alignItems:{desktop:"flex-start",tablet:"center",mobile:"center",laptop:"flex-start"},justifyContent:"flex-start",marginLeft:"3%"}}>
+
+
+          {/* cards */}
+          {data.map((value,index)=>(
+          <Card sx={{ display: 'flex',marginTop:'2%',width:{
+            mobile:"90%",tablet:"70%",desktop:"70%"
+          },fontFamily:'Poppins',borderRadius:'13px',boxShadow:'none' , height:'30%'}}>
+
+          
+
+      {/* card content */}
+       <Box sx={{display:'flex'}}>
+         <CardContent sx={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start"}}> 
+          <Typography component="div" variant="p" sx={{fontSize:{mobile:"0.75rem",desktop:"1rem",tablet:"1rem"}}} >
+            {value.desc}
+
+            </Typography>
+         </CardContent>
        
       
-       
+        </Box> 
     </Card>
-    ))}
+     ))}
         </Box>
-      </ValueContainer>
+     
+       
+      </Box>
       </Container>
        </Box>
     

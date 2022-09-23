@@ -1,56 +1,45 @@
 import React from 'react'
 import { Box, Typography,Hidden } from '@mui/material'
 import Slider from "react-slick";
-import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import {data, settings} from './CardData';
+import Card from './Card'
 
 // card section
 
 const CardSection = () => {
     
   return (
-    <>
-    <Box sx={{height:'100%',padding:'30px',alignItems:'center'}}>
-   
-    <Box sx={{padding:'10px'}} >
+    // <>
     <Slider {...settings}>
-
       {/* card */}
    {data.map((value,index)=>(
-     
-   <Card sx={{ maxWidth:"200px",backgroundColor: (value.bgcolor),height:"300px",borderRadius:'29px',fontFamily:'Poppins', }} key={index}>
-     <CardActionArea>
+   <div  key={index}>
+   <Card title={value.title} description={value.desc} img={value.img} bgcolor={value.bgcolor}>
+     {/* <CardActionArea>
       
-      {/* card content */}
        <CardContent>
-         <Typography gutterBottom variant="h5" component="div" sx={{width:'50px',fontFamily:"Poppins",fontWeight:"bolder"}}>
+         <Typography sx={{width:'40%',fontFamily:"Poppins",fontWeight:"bolder"}}>
           {value.title}
          </Typography>
          <Typography variant="body2" color="text.secondary" sx={{width:'80px',fontFamily:"Poppins",fontWeight:'300px'}}>
         {value.desc}
          </Typography>
         
-       </CardContent>
-
-       {/* card image */}
+       </CardContent> 
        <CardMedia
        component="img"
-       sx={{ width: 151,marginLeft:"40px"}}
-       image={value.img}
+       sx={{ width: 151,marginLeft:"10%"}}
+       image={value.img} 
       
      />
-     </CardActionArea>
+     </CardActionArea>  */}
    </Card>
-
+   </div>
 ))}
   </Slider>
-   </Box>
-  
-   </Box>
-    </>
   )
 }
 

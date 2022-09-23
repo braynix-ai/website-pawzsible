@@ -121,7 +121,7 @@ const styles = {
         flexDirection: ["column", "column", "column", "row"],
         columnGap:'0.5vw',
         button: {
-            fontSize: [22, 22, 22, 22],
+            fontSize: '120%',
             cursor: "pointer",
             mx: [0, 0, 0, 10, 18, 20],
             my: [15, 15, 15, 0],
@@ -199,11 +199,9 @@ const NavLinks = ({ closeMenu = undefined }) => {
             <Link href="/TalkSection"><Button  onClick={closeMenu}>Join Us</Button></Link>
         <Button variant="outlined" 
         sx={{
-         fontSize:'10px',
          fontWeight:'bold',
          color:"black", 
-         width:'25vw', 
-         marginRight:'30px' , 
+         width:'20vw', 
          border:"1px solid black",marginLeft:'auto',fontFamily:"poppins"}}>
           Consult a Vet
           </Button>

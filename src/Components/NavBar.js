@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import NavLinks from './NavLinks'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 import { AnimatePresence } from 'framer-motion'
+import { Link } from '@mui/material'
 
 const styles = {
     navbar: {
@@ -62,7 +63,7 @@ const Navbar = () => {
 
     return (
         <Flex sx={styles.navbar} as="nav">
-            <img src="../Assests/logo 1.png" style={{height:"8vh",marginTop:'5px'}}/>
+            <Link href="/"><img src="../Assests/logo 1.png" style={{height:"8vh",marginTop:'5px'}}/></Link>
             {breakpointIndex > 2 ? <NavLinks /> :
                 <AnimatePresence>
                     {showMenu &&

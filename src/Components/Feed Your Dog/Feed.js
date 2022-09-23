@@ -32,12 +32,14 @@ const Feed = () => {
     marginTop:'10vh',marginBottom:"5vh",fontFamily:'Poppins',
    flexDirection:{
     mobile: "column",
-    tablet: "row",
+    tablet: "column",
+    laptop:"row",
     desktop: "row"
   },
   alignItems:{
     mobile: "center",
-    tablet: "flex-start",
+    tablet: "center",
+    laptop:"flex-start",
     desktop: "flex-start"
     
   },
@@ -72,8 +74,9 @@ const Feed = () => {
         component="img"
         sx={{
           
-          height: { desktop:"40vh",tablet:"auto",mobile:"17vh"},
-          width: { desktop:"30vh",mobile:"10vh",tablet:"20vh" },
+          height: { desktop:"30vh",tablet:"20vh",
+          laptop:"25vh",mobile:"17vh"},
+          width: {mobile:"20vw",tablet:"19vw",laptop:"15vw",desktop:"15vw"},
         }}
         alt=""
         src="../Assests//Rectangle 47.jpg"
@@ -84,7 +87,8 @@ const Feed = () => {
           
           <Box sx={{display:'flex' , flexDirection:{
       mobile: "row",
-      tablet: "column",
+      tablet: "row",
+     laptop:"column",
       desktop: "column"
     }, justifyContent:{
       desktop:"space-between",
@@ -93,7 +97,7 @@ const Feed = () => {
     },alignItems:{
       mobile:"center",
       desktop:"flex-start",
-      tablet:"flex-start"
+      tablet:"center"
     }}} >
 
       {/* image 2 */}
@@ -101,11 +105,11 @@ const Feed = () => {
         component="img"
         sx={{
           
-          height:{laptop:"auto",tablet:"20vh",mobile:"17vh"},
-          width: { desktop:"45vh",mobile:"12vh",tablet:"30vh",laptop:"35vh" },
-         padding: "10px"
+          height:{desktop:"auto",tablet:"20vh",mobile:"17vh"},
+          width: {mobile:"25vw",tablet:"19vw",laptop:"18vw",desktop:"17vw"},
+         padding: "10px",objectFit:"content"
         }}
-        alt="The house from the offer."
+        
         src="../Assests//Rectangle 46.jpg"
       />
 
@@ -114,11 +118,13 @@ const Feed = () => {
         component="img"
         sx={{
           
-          height:{laptop:"auto",tablet:"23vh",mobile:"17vh"},
-          width: { desktop:"35vh",mobile:"12vh",tablet:"23vh",laptop:"30vh" },
+          height:{desktop:"auto",tablet:"20vh",
+          laptop:"23vh",
+          mobile:"17vh"},
+          width: {mobile:"23vw",tablet:"19vw",laptop:"16vw",desktop:"16vw"},
           padding: "10px"
         }}
-        alt="The house from the offer."
+       
         src="../Assests//Rectangle 48.jpg"
       />
 
@@ -132,7 +138,8 @@ const Feed = () => {
         <Box sx={{flex:1,display:"flex",flexDirection:"column", 
         alignItems:{
           desktop:"flex-start",
-          tablet:"flex-start",
+          laptop:"flex-start",
+          tablet:"center",
           mobile:"center"}
           }}>
 

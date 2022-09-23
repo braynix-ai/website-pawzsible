@@ -111,22 +111,22 @@
 
 /** @jsxImportSource theme-ui */
 import Link from '@mui/material/Link'
-import { Button, Flex } from './components/motionComponents'
 import { useBreakpointIndex } from '@theme-ui/match-media'
+import { Button, Flex } from './components/motionComponents'
 
 const styles = {
     navlinkContainer: {
         alignItems: "center",
         justifyContent: ["center", "center", "center", "start"],
         flexDirection: ["column", "column", "column", "row"],
-        columnGap:'0.5vw',
+        columnGap: '0.5vw',
         button: {
             fontSize: '120%',
             cursor: "pointer",
             mx: [0, 0, 0, 10, 18, 20],
             my: [15, 15, 15, 0],
             position: "relative",
-            backgroundColor:'transparent',
+            backgroundColor: 'transparent',
             fontFamily: "poppins",
             transition: ".1s",
             color: "black",
@@ -161,7 +161,7 @@ const styles = {
 }
 
 const NavLinks = ({ closeMenu = undefined }) => {
-    const index = useBreakpointIndex()
+    // const index = useBreakpointIndex()
 
     // const menuAnimation = () => {
     //     return index <= 2 ? {
@@ -192,19 +192,20 @@ const NavLinks = ({ closeMenu = undefined }) => {
     return ( // variants={container} initial="hidden" animate="show"
         <Flex sx={styles.navlinkContainer} className="navLinksContainer">
             <Link href="/AboutUs"><Button onClick={closeMenu}>About Us</Button></Link>
-            <Link href="/Teams"><Button  onClick={closeMenu} >Teams</Button></Link>
-            <Link href="/Feed"><Button  onClick={closeMenu} >Feed</Button></Link>
-            <Link href="/Groom"><Button  onClick={closeMenu}>Groom</Button></Link>
-            <Link href="/"><Button  onClick={closeMenu}>Testimonial</Button></Link>
-            <Link href="/TalkSection"><Button  onClick={closeMenu}>Join Us</Button></Link>
-        <Button variant="outlined" 
-        sx={{
-         fontWeight:'bold',
-         color:"black", 
-         width:'20vw', 
-         border:"1px solid black",marginLeft:'auto',fontFamily:"poppins"}}>
-          Consult a Vet
-          </Button>
+            <Link href="/Teams"><Button onClick={closeMenu} >Teams</Button></Link>
+            <Link href="/Feed"><Button onClick={closeMenu} >Feed</Button></Link>
+            <Link href="/Groom"><Button onClick={closeMenu}>Groom</Button></Link>
+            <Link href="/"><Button onClick={closeMenu}>Testimonial</Button></Link>
+            <Link href="/TalkSection"><Button onClick={closeMenu}>Join Us</Button></Link>
+            <Button variant="outlined"
+                sx={{
+                    fontWeight: 'bold',
+                    color: "black",
+                    width: '20vw',
+                    border: "1px solid black", marginLeft: 'auto', fontFamily: "poppins"
+                }}>
+                Consult a Vet
+            </Button>
         </Flex>
     )
 }

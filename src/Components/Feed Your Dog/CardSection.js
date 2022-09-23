@@ -1,24 +1,20 @@
-import React from 'react'
-import { Box, Typography,Hidden } from '@mui/material'
+import React from 'react';
 import Slider from "react-slick";
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea } from '@mui/material';
-import {data, settings} from './CardData';
-import Card from './Card'
+import Card from './Card';
+import { data, settings } from './CardData';
 
 // card section
 
 const CardSection = () => {
-    
+
   return (
     // <>
     <Slider {...settings}>
       {/* card */}
-   {data.map((value,index)=>(
-   <div  key={index}>
-   <Card title={value.title} description={value.desc} img={value.img} bgcolor={value.bgcolor}>
-     {/* <CardActionArea>
+      {data.map((value, index) => (
+        <div key={index}>
+          <Card title={value.title} description={value.desc} img={value.img} bgcolor={value.bgcolor}>
+            {/* <CardActionArea>
       
        <CardContent>
          <Typography sx={{width:'40%',fontFamily:"Poppins",fontWeight:"bolder"}}>
@@ -36,10 +32,10 @@ const CardSection = () => {
       
      />
      </CardActionArea>  */}
-   </Card>
-   </div>
-))}
-  </Slider>
+          </Card>
+        </div>
+      ))}
+    </Slider>
   )
 }
 

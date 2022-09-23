@@ -1,8 +1,8 @@
-import { Box } from '@mui/material'
-import React from 'react'
+import { Box } from '@mui/material';
+import React from 'react';
 
-   
-    import Slider from 'react-slick';
+
+import Slider from 'react-slick';
 
 const GifSection = () => {
   const settings = {
@@ -15,18 +15,18 @@ const GifSection = () => {
     slidesToScroll: 1
   };
   return (
-    
-      
-        <Box sx={{width:"100%",height:'100%',marginBottom:'150px'}}>
-            
-           <Slider {...settings}>
-             
-            <img src="../Assests/aboutgif.gif" style={{width:'100%',height:'100%'}}/>
-          
-            </Slider>
-           
-        </Box>
-     
+
+
+    <Box sx={{ width: "100%", height: '100%', marginBottom: '150px' }}>
+
+      <Slider {...settings}>
+
+        <img src="../Assests/aboutgif.gif" alt="aboutgif" style={{ width: '100%', height: '100%' }} />
+
+      </Slider>
+
+    </Box>
+
   )
 }
 

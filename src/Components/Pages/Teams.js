@@ -5,9 +5,9 @@ import Paws from '../TeamsPage/Paws'
 const Teams = () => {
   return (
     <>
-   <Paws/>
-   <Bark/>
-   </>
+      <Paws />
+      <Bark />
+    </>
   )
 }
 

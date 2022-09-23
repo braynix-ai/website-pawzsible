@@ -6,9 +6,9 @@ import Value from '../AboutPage/Value'
 const AboutUs = () => {
   return (
     <>
-    <Story/>
-    <GifSection/>
-     <Value/> 
+      <Story />
+      <GifSection />
+      <Value />
     </>
   )
 }

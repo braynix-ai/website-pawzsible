@@ -1,10 +1,10 @@
 /** @jsxImportSource theme-ui */
-import { Flex, IconButton, Image } from './components/motionComponents'
-import { useState, useEffect } from 'react'
-import NavLinks from './NavLinks'
+import { Link } from '@mui/material'
 import { useBreakpointIndex } from '@theme-ui/match-media'
 import { AnimatePresence } from 'framer-motion'
-import { Link } from '@mui/material'
+import { useEffect, useState } from 'react'
+import { Flex, IconButton, Image } from './components/motionComponents'
+import NavLinks from './NavLinks'
 
 const styles = {
     navbar: {
@@ -13,9 +13,9 @@ const styles = {
         py: [10, 10, 10, 20],
         position: "sticky",
         top: 0,
-        backgroundColor:"#ffddac",  
+        backgroundColor: "#ffddac",
         backdropFilter: "blur(4px)",
-        boxShadow:"0 0 20px #1D1E1F1F",
+        boxShadow: "0 0 20px #1D1E1F1F",
         zIndex: 10,
     },
     menuButton: {
@@ -63,13 +63,13 @@ const Navbar = () => {
 
     return (
         <Flex sx={styles.navbar} as="nav">
-            <Link href="/"><img src="../Assests/logo 1.png" style={{height:"8vh",marginTop:'5px'}}/></Link>
+            <Link href="/"><img src="../Assests/logo 1.png" style={{ height: "8vh", marginTop: '5px' }} alt="logo"/></Link>
             {breakpointIndex > 2 ? <NavLinks /> :
                 <AnimatePresence>
                     {showMenu &&
-                        <Flex  sx={styles.menu} variants={variants} initial={'initial'} animate={'animate'} exit={'exit'} transition={{ duration: 0.5 }}>
+                        <Flex sx={styles.menu} variants={variants} initial={'initial'} animate={'animate'} exit={'exit'} transition={{ duration: 0.5 }}>
                             <Flex sx={{ justifyContent: "flex-end", width: "100%", p: 15 }}>
-                                <IconButton sx={styles.menuButton} onClick={() => setShowMenu(false)}><CloseIcon sx={{color:'black'}} /></IconButton>
+                                <IconButton sx={styles.menuButton} onClick={() => setShowMenu(false)}><CloseIcon sx={{ color: 'black' }} /></IconButton>
                             </Flex>
                             <Flex sx={styles.linksContainer}>
                                 <NavLinks closeMenu={() => setShowMenu(false)} />
@@ -79,7 +79,7 @@ const Navbar = () => {
                 </AnimatePresence>
             }
 
-            <IconButton sx={styles.menuButton} onClick={() => setShowMenu(true)} data-testid="menuButton"><Image src='/icons/menu.svg' alt='Menu'/></IconButton>
+            <IconButton sx={styles.menuButton} onClick={() => setShowMenu(true)} data-testid="menuButton"><Image src='/icons/menu.svg' alt='Menu' /></IconButton>
         </Flex>
     )
 }

@@ -6,24 +6,24 @@ import GroomSection from '../Groom You Dog/GroomSection'
 import Hero from '../Hero/Hero'
 import TalkSection from "../Talk To Us/TalkSection"
 
-import Working from "../Stepper/Working"
 import Brands from '../Poplular Brands/Brands'
+import Working from "../Stepper/Working"
 const Home = () => {
   return (
-   <>
-  
-   <Feed/>
-   
-   <CardSection/>  
-   <Brands/>
-    <GroomSection/>
-   
-   <TalkSection/> 
-   <Working/>
-   <Hero/>
-   
-   
-   </>
+    <>
+
+      <Feed />
+
+      <CardSection />
+      <Brands />
+      <GroomSection />
+
+      <TalkSection />
+      <Working />
+      <Hero />
+
+
+    </>
   )
 }
 

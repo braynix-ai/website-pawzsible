@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
 import {
   Drawer,
   IconButton,
   List,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
+  ListItemButton
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-const pages = ['AboutUs', 'Teams','Feed', 'Groom'];
+const pages = ['AboutUs', 'Teams', 'Feed', 'Groom'];
 
 
 //Drawer component
@@ -25,14 +23,14 @@ const DrawerComp = () => {
         onClose={() => setOpenDrawer(false)}
       >
         <List >
-        {pages.map((page) => (
-                <ListItemButton sx={{color:"Black",alignItems:'center'}} key={page}>
-                 
-                    <Link style={{textDecoration:'none',color:'black',}} to={`/${page}`}>{page}</Link>
-                   
-                 
-                </ListItemButton>
-        ))}
+          {pages.map((page) => (
+            <ListItemButton sx={{ color: "Black", alignItems: 'center' }} key={page}>
+
+              <Link style={{ textDecoration: 'none', color: 'black', }} to={`/${page}`}>{page}</Link>
+
+
+            </ListItemButton>
+          ))}
         </List>
       </Drawer>
       <IconButton

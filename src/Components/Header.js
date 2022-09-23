@@ -8,25 +8,25 @@ import Navbar from "./NavBar";
 // Navbar
 
 const Header = () => {
-  const [value, setValue] = useState();
+  // const [value, setValue] = useState();
   const theme = useTheme();
   console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
   console.log(isMatch);
 
   //Page links
-  const pages2 = [
-    {title:"About Us",  href:"/AboutUs"},
-    {title:"Teams",  href:"/Teams"},
-    {title:"Testimonial",  href:"/"},
-    {title:"Feed Your Dog",  href:"/#Feed_Your_Dog"},
-    {title:"Groom Your Dog",  href:"/#Groom_Your_Dog"},
-    {title:"Join Us",  href:"/TalkSection"},
-    
-    
-  ]
+  // const pages2 = [
+  //   { title: "About Us", href: "/AboutUs" },
+  //   { title: "Teams", href: "/Teams" },
+  //   { title: "Testimonial", href: "/" },
+  //   { title: "Feed Your Dog", href: "/#Feed_Your_Dog" },
+  //   { title: "Groom Your Dog", href: "/#Groom_Your_Dog" },
+  //   { title: "Join Us", href: "/TalkSection" },
+
+
+  // ]
   return (
-    <Navbar/>
+    <Navbar />
     // <React.Fragment>
     //   <AppBar sx={{ background: "white",position:'static' }}>
     //     <Toolbar>
@@ -37,7 +37,7 @@ const Header = () => {
     //     <Link to="/">
     //     <img src="../Assests/logo 1.png" style={{height:"50px",marginTop:'15px'}}/> 
     //     </Link>
-      
+
     // </Box>
 
     //     {/* navbar logo */}
@@ -45,7 +45,7 @@ const Header = () => {
     //     {/* Navbar links */}
     //       {isMatch ? (
     //         <>
-             
+
     //           <DrawerComp />
     //         </>
     //       ) : (
@@ -58,7 +58,7 @@ const Header = () => {
     //           ))} 
     //           </Box>
     //           <Box display="flex">
-        
+
     //     <Button variant="outlined" 
     //     sx={{
     //       fontSize:'10px',
@@ -71,7 +71,7 @@ const Header = () => {
     //       </Button>
     // </Box>
 
-    
+
     //     {/* Navbar links */}
     //         </>
     //       )}

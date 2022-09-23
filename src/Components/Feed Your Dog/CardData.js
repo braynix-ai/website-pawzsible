@@ -1,160 +1,157 @@
-import { textAlign } from "@mui/system";
 
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block",background:'black' }}
-        onClick={onClick}
-      />
-    );
-  }
-  
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background:'black' }}
-        onClick={onClick}
-      />
-    );
-  }
+// function SampleNextArrow(props) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{ ...style, display: "block", background: 'black' }}
+//       onClick={onClick}
+//     />
+//   );
+// }
 
+// function SamplePrevArrow(props) {
+//   const { className, style, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       style={{ ...style, display: "block", background: 'black' }}
+//       onClick={onClick}
+//     />
+//   );
+// }
 
 
 
 
-export const  settings = {
-    // dots: true,
-    // infinite: true,
-    // speed: 500,
-    // slidesToShow: 1,
-    // slidesToScroll: 1
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
-    responsive: [
-        {
-            breakpoint: 1204,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 3,
 
-            }
-          },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+export const settings = {
+  // dots: true,
+  // infinite: true,
+  // speed: 500,
+  // slidesToShow: 1,
+  // slidesToScroll: 1
+  dots: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  initialSlide: 0,
+  autoplay: true,
+  speed: 6000,
+  autoplaySpeed: 0,
+  cssEase: "linear",
+  // nextArrow: <SampleNextArrow />,
+  // prevArrow: <SamplePrevArrow />,
+  responsive: [
+    {
+      breakpoint: 1204,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 3,
 
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
       }
-    ]
-  };
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+};
 
 
 
-export const data =[
-    {
-        bgcolor:"#FFF0E3",
-       
-        img:"../Assests/My project.png",
-        title:'Chew Bones',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#FFEBEB",
-        img:"../Assests/Dog Training.png",
-        title:'Natural Treats',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#E9FFFD",
-        img:"../Assests/My project.png",
-        title:'Training Treats',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#EBECF0" ,
-        img:"../Assests/Dog Training.png",
-        title:'Natural Treats',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#FFF0E3",
-       
-        img:"../Assests/My project.png",
-        title:'Chew Bones',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#FFEBEB",
-        img:"../Assests/Dog Training.png",
-        title:'Natural Treats',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#E9FFFD",
-        img:"../Assests/My project.png",
-        title:'Training Treats',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#EBECF0" ,
-        img:"../Assests/Dog Training.png",
-        title:'Natural Treats',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#FFEBEB",
-        img:"../Assests/My project.png",
-        title:'Dental Treats',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#FFEBEB",
-        img:"../Assests/My project.png",
-        title:'Treat Bones',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#FFEBEB",
-        img:"../Assests/My project.png",
-        title:'Chew Bones',
-        desc:"Starting at ₹99* "
-    },
-    {
-        bgcolor:"#FFEBEB",
-        img:"../Assests/My project.png",
-        title:'Chew Bones',
-        desc:"Starting at ₹99* "
-    },
+export const data = [
+  {
+    bgcolor: "#FFF0E3",
+
+    img: "../Assests/My project.png",
+    title: 'Chew Bones',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#FFEBEB",
+    img: "../Assests/Dog Training.png",
+    title: 'Natural Treats',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#E9FFFD",
+    img: "../Assests/My project.png",
+    title: 'Training Treats',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#EBECF0",
+    img: "../Assests/Dog Training.png",
+    title: 'Natural Treats',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#FFF0E3",
+
+    img: "../Assests/My project.png",
+    title: 'Chew Bones',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#FFEBEB",
+    img: "../Assests/Dog Training.png",
+    title: 'Natural Treats',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#E9FFFD",
+    img: "../Assests/My project.png",
+    title: 'Training Treats',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#EBECF0",
+    img: "../Assests/Dog Training.png",
+    title: 'Natural Treats',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#FFEBEB",
+    img: "../Assests/My project.png",
+    title: 'Dental Treats',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#FFEBEB",
+    img: "../Assests/My project.png",
+    title: 'Treat Bones',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#FFEBEB",
+    img: "../Assests/My project.png",
+    title: 'Chew Bones',
+    desc: "Starting at ₹99* "
+  },
+  {
+    bgcolor: "#FFEBEB",
+    img: "../Assests/My project.png",
+    title: 'Chew Bones',
+    desc: "Starting at ₹99* "
+  },
 ]
- 

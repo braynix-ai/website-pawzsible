@@ -21,7 +21,7 @@ const GifSection = () => {
             
            <Slider {...settings}>
              
-            <img src="../Assests/aboutgif.gif" style={{width:'100%',height:'200px'}}/>
+            <img src="../Assests/aboutgif.gif" style={{width:'100%',height:'100%'}}/>
           
             </Slider>
            

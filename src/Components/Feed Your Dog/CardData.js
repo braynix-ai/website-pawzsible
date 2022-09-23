@@ -1,3 +1,4 @@
+import { textAlign } from "@mui/system";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -26,22 +27,30 @@ function SampleNextArrow(props) {
 
 
 export const  settings = {
+    // dots: true,
+    // infinite: true,
+    // speed: 500,
+    // slidesToShow: 1,
+    // slidesToScroll: 1
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 3,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+    speed: 6000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    // nextArrow: <SampleNextArrow />,
+    // prevArrow: <SamplePrevArrow />,
     responsive: [
         {
             breakpoint: 1204,
             settings: {
               slidesToShow: 4,
               slidesToScroll: 3,
-              infinite: true,
-              dots: true
+
             }
           },
       {
@@ -49,8 +58,7 @@ export const  settings = {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
+
         }
       },
       {
@@ -65,7 +73,7 @@ export const  settings = {
         breakpoint: 500,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
     ]

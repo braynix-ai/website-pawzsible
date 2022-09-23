@@ -56,37 +56,37 @@ Healthy!</Title>
 <Text sx={{fontSize:{desktop:"15px",tablet:"14px",mobile:"9px"}}} >Over 250 Vets available!</Text>
 </Box>
 
-<Box sx={{marginTop:{desktop:"40px",tablet:"20px",mobile:"15px"}, display:"flex",justifyContent:"flex-start", width:{desktop:"400px",tablet:"300px",mobile:"150px"},fontFamily:'poppins'}}>
+<Box sx={{marginTop:"5%", display:"flex",justifyContent:"flex-start", width:"30vw",fontFamily:'poppins'}}>
     <Box sx={{display:"flex",alignItems:"center"}}>
     <Box
         component="img"
         sx={{
           
-          height: { desktop:"5vh",mobile:"3.5vh",tablet:"4.5vh" },
+         height:"auto",
          
-          width:{mobile:"3vh",desktop:"5vh",tablet:"4vh"}
+          width:"2vw"
         }}
         alt=""
         src='../Assests/Guarantee.png'/>
     
       
    
-<Text sx={{fontSize:{desktop:"10px",tablet:"8px",mobile:"6px"}}}>Verified Doctors</Text>
+<Text sx={{fontSize:{desktop:"0.75",tablet:"0.5rem",mobile:"0.25rem"}}}>Verified Doctors</Text>
 </Box>
 <Box sx={{display:"flex",alignItems:"center"}}>
 <Box
         component="img"
         sx={{
           
-          height: { desktop:"5vh",mobile:"3.5vh",tablet:"4.5vh" },
+          height: "auto",
          
-          width:{mobile:"3vh",desktop:"5vh",tablet:"4vh"}
+          width:"2vw"
         }}
         alt=""
         src='../Assests/Note.png'/>
     
 
-<Text sx={{fontSize:{desktop:"10px",tablet:"8px",mobile:"6px"}}}>Digital Prescriptions</Text>
+<Text sx={{fontSize:{desktop:"0.75",tablet:"0.5rem",mobile:"0.25rem"}}}>Digital Prescriptions</Text>
 
 </Box>
 </Box>
@@ -101,7 +101,7 @@ Healthy!</Title>
           
           height:"auto",
          
-          width:{mobile:"30vh",desktop:"70vh",tablet:"50vh"}
+          width:"45vw"
         }}
         alt=""
         src='../Assests/image 26.png'/>

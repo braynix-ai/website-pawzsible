@@ -21,7 +21,8 @@ export default function GroomSection() {
     display:'flex',
     flexDirection:{
      mobile:'column',
-     tablet:'row',
+     tablet:'column',
+    laptop:"row",
      desktop:'row'
     },
     alignItems:{
@@ -45,9 +46,11 @@ export default function GroomSection() {
         component="img"
         sx={{
           
-          height:{laptop:"auto",tablet:"auto",mobile:"50vh"},
+          height:{desktop:"auto",tablet:"70vh",
+          laptop:"100vh",mobile:"50vh"},
          
-          width:{mobile:"100vh",desktop:"75vh",tablet:"65vh"}
+          width:{mobile:"60vw",desktop:"32vw",
+          tablet:"50vw"}
         }}
        
         alt=""
@@ -58,11 +61,12 @@ export default function GroomSection() {
 
           {/* content container */}
 
-        <Box sx={{ flex:{desktop:"1.25", tablet:"1.25"},display:"flex", flexDirection:"column",alignItems:{desktop:"flex-start",tablet:"flex-start",mobile:"center"},marginTop:{mobile:"5%"},marginLeft:"3%"}}>
+        <Box sx={{ flex:{desktop:"1.25", tablet:"1.25"},display:"flex", flexDirection:"column",alignItems:{desktop:"flex-start",tablet:"center",mobile:"center"},marginTop:{mobile:"5%"},marginLeft:"3%"}}>
 
           {/* heading */}
         <Typography sx={{fontSize:{desktop:"4rem",laptop:"3rem",tablet:"2rem"},color: "#AA2D29",fontFamily:'Poppins',fontWeight:"bolder",
-      display:{desktop:"block",tablet:"block",mobile:"none"}}}>
+      display:{desktop:"block",tablet:"block",mobile:"none"},
+     }}>
         Groom Your Dog
         </Typography>
 
@@ -78,13 +82,13 @@ export default function GroomSection() {
             {/* card image */}
           <CardMedia
         component="img"
-        sx={{ width:{mobile:"30vh",desktop:"40vh",tablet:"35vh"},height:{desktop:"18vh",mobile:"15vh",tablet:"16vh"},borderRadius:"10px" }}
+        sx={{ width:"20vw",height:{desktop:"18vh",mobile:"12vh",tablet:"18vh"},borderRadius:"10px" }}
         image={value.img} />
 
       {/* card content */}
        <Box sx={{display:'flex'}}>
          <CardContent sx={{display:"flex",justifyContent:"flex-start",alignItems:"flex-start"}}> 
-          <Typography component="div" variant="p" sx={{fontSize:{mobile:"10px",desktop:"15px",tablet:"12px"}}} >
+          <Typography component="div" variant="p" sx={{fontSize:{mobile:"10px",desktop:"15px",tablet:"1rem"}}} >
             {value.desc}
             </Typography>
          </CardContent>

@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function ImgMediaCard(props) {
   return (
-    <Card sx={{backgroundColor:(props.bgcolor),borderRadius:'29px',fontFamily:'Poppins',width:'70%',height:'40vh',margin:'auto'}}>
+    <Card sx={{backgroundColor:(props.bgcolor),borderRadius:'29px',fontFamily:'Poppins',width:'70%',height:'40vh'}}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
 {props.title}

@@ -16,7 +16,7 @@ const Bark = () => {
       </Typography>
 
       {/* support query container */}
-    <Container sx={{display:"flex",justifyContent:"space-between",
+    <Container sx={{display:"flex",justifyContent:"space-around",
     paddingTop:"40px",paddingBottom:"40px"}}>
         <SupportContainer>
 

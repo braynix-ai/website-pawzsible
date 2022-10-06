@@ -219,8 +219,8 @@ const Feed = () => {
           <div style={{ position: 'relative', top: '0', left: '0' }}>
             <img src="../Assests//Vector-10.svg" alt="background" style={{ position: 'relative', top: '0', left: '0', width: '40vw' }} />
             <img src="../Assests//Rectangle 47.jpg" alt="first dog" style={{ position: 'absolute', top: '25%', left: '18%', width: '15vw' }} />
-            <img src='../Assests//Rectangle 46.jpg' alt="second image" style={{ position: 'absolute', top: '0px', left: '50%', width: '20vw' }} />
-            <img src='../Assests//Rectangle 48.jpg' alt="third image" style={{ position: 'absolute', top: '50%', left: '50%', width: '20vw' }} />
+            <img src='../Assests//Rectangle 46.jpg' alt="second" style={{ position: 'absolute', top: '0px', left: '50%', width: '20vw' }} />
+            <img src='../Assests//Rectangle 48.jpg' alt="third" style={{ position: 'absolute', top: '50%', left: '50%', width: '20vw' }} />
           </div>
         </Grid>
         <Grid item mobile={6} tablet={6} laptop={6} desktop={6}>
@@ -271,16 +271,16 @@ const Feed = () => {
           <div style={{ position: 'relative', top: '0', left: '0' }}>
             <img src="../Assests//Vector-5.svg" alt="background1" style={{ position: 'relative', top: '0', left: '20%', width: '35vw' }} />
             <img src="../Assests//Rectangle 169.svg" alt="first dog1" style={{ position: 'absolute', top: '10%', left: '10%', width: '18vw' }} />
-            <img src='../Assests//Rectangle 170.svg' alt="second image1" style={{ position: 'absolute', top: '40%', left: '30%', width: '15vw' }} />
-            <img src='../Assests//Rectangle 171.svg' alt="third image1" style={{ position: 'absolute', top: '20%', left: '50%', width: '15vw' }} />
+            <img src='../Assests//Rectangle 170.svg' alt="second1" style={{ position: 'absolute', top: '40%', left: '30%', width: '15vw' }} />
+            <img src='../Assests//Rectangle 171.svg' alt="third1" style={{ position: 'absolute', top: '20%', left: '50%', width: '15vw' }} />
           </div>
         </Grid>
         <Grid mobile={6} tablet={6} laptop={6} desktop={6} sx={{ marginTop: '50px' }}>
           <div style={{ position: 'relative', top: '0', left: '0' }}>
             <img src="../Assests//Vector-1.svg" alt="background2" style={{ position: 'relative', top: '0', left: '0', width: '35vw' }} />
             <img src="../Assests//Rectangle 166.svg" alt="first dog2" style={{ position: 'absolute', top: '10%', left: '10%', width: '20vw' }} />
-            <img src='../Assests//Rectangle 167.svg' alt="second image2" style={{ position: 'absolute', top: '45%', left: '40%', width: '15vw' }} />
-            <img src='../Assests//Rectangle 168.svg' alt="third image2" style={{ position: 'absolute', top: '22%', left: '50%', width: '15vw' }} />
+            <img src='../Assests//Rectangle 167.svg' alt="second2" style={{ position: 'absolute', top: '45%', left: '40%', width: '15vw' }} />
+            <img src='../Assests//Rectangle 168.svg' alt="third2" style={{ position: 'absolute', top: '22%', left: '50%', width: '15vw' }} />
           </div>
         </Grid>
         <Grid mobile={6} tablet={6} laptop={6} desktop={6} sx={{ marginTop: '50px' }}>
@@ -323,8 +323,8 @@ const Feed = () => {
           <div style={{ position: 'relative', top: '0', left: '0' }}>
             <img src="../Assests//Vector-2.svg" alt="background3" style={{ position: 'relative', top: '0', left: '10%', width: '40vw' }} />
             <img src="../Assests//Rectangle 172.svg" alt="first dog3" style={{ position: 'absolute', top: '15%', left: '20%', width: '18vw' }} />
-            <img src='../Assests//Rectangle 173.svg' alt="second image3" style={{ position: 'absolute', top: '50%', left: '45%', width: '15vw' }} />
-            <img src='../Assests//Rectangle 174.svg' alt="third image3" style={{ position: 'absolute', top: '15%', left: '60%', width: '15vw' }} />
+            <img src='../Assests//Rectangle 173.svg' alt="second3" style={{ position: 'absolute', top: '50%', left: '45%', width: '15vw' }} />
+            <img src='../Assests//Rectangle 174.svg' alt="third3" style={{ position: 'absolute', top: '15%', left: '60%', width: '15vw' }} />
           </div>
         </Grid>
 

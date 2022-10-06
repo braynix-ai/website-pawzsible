@@ -10,13 +10,12 @@ export const FooterContainer = styled(Box)(() => ({
 
 export const NewsContainer = styled(Box)(() => ({
   width: "100%",
-  height: "60px",
   display: "flex",
   alignItems: "center",
   marginTop: "10px",
   paddingBottom: "10px",
-  justifyContent: 'space-between',
-
+  justifyContent: 'space-around',
+  marginBottom: '30px'
 }));
 
 
@@ -25,10 +24,9 @@ export const FooterContentContainer = styled(Box)(() => ({
   height: "100%",
   display: "flex",
   alignItems: "center",
+  justifyContent: 'space-around',
   paddingTop: '30px',
   paddingBottom: '30px',
-
-
   backgroundColor: 'black'
 }));
 export const FooterContent = styled(Box)(({ theme }) => ({
@@ -52,7 +50,8 @@ export const Content = styled(Box)(({ theme }) => ({
 
   fontFamily: 'Poppins',
   fontSize: 'small',
-  paddingBottom: '10px'
+  paddingBottom: '10px',
+  color: 'white'
 
 }));
 

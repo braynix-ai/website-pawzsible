@@ -41,26 +41,32 @@ export default function GroomSection() {
           {/* image container */}
           <Box sx={{ flex: "1", display: 'flex', justifyContent: 'center', alignItems: "center" }}>
 
-            {/* image */}
-            <Box
+            <div style={{ position: 'relative', textAlign: 'center', color: 'black' }}>
+              {/* image */}
+              <Box
+                component="img"
+                sx={{
+                  height: "auto",
+                  width: {
+                    mobile: "60vw", desktop: "32vw",
+                    tablet: "50vw"
+                  },
+                  objectFit: 'contain'
 
-              component="img"
-              sx={{
+                }}
 
-                height: {
-                  desktop: "auto", tablet: "70vh",
-                  laptop: "100vh", mobile: "50vh"
-                },
+                alt=""
+                src='../Assests/groom img.png' />
 
-                width: {
-                  mobile: "60vw", desktop: "32vw",
-                  tablet: "50vw"
-                }
-              }}
-
-              alt=""
-              src='../Assests/groom img.png' />
-
+              <Box sx={{
+                position: 'absolute', bottom: '0%', right: '0px', fontSize: {
+                  desktop: "200%", tablet: "200%",
+                  laptop: "200%", mobile: "100%"
+                }, backgroundColor: 'rgba(255, 255, 255, 0.5)', padding: '20px'
+              }}>
+                <b>Sale Upto 50%<br></br> on our App</b>
+              </Box>
+            </div>
           </Box>
 
 
@@ -95,7 +101,7 @@ export default function GroomSection() {
 
                 {/* card content */}
                 <Box sx={{ display: 'flex' }}>
-                  <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "flex-start" }}>
+                  <CardContent sx={{ display: "flex", justifyContent: "flex-start", alignItems: "flex-start", padding: '0px', paddingLeft: '20px' }}>
                     <Typography component="div" variant="p" sx={{ fontSize: { mobile: "10px", desktop: "15px", tablet: "1rem" } }} >
                       {value.desc}
                     </Typography>

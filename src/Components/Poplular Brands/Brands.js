@@ -4,13 +4,14 @@ import { theme } from '../Styles'
 import { BrandContainer } from "./Brandstyle"
 
 
+
 // Popular brands container
 
 const Brands = () => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <BrandContainer sx={{ marginTop: '30px' }}>
+        <BrandContainer sx={{ marginTop: '80px' }}>
 
           {/* heading */}
           <Typography sx={{ fontSize: { desktop: '2rem', mobile: "1rem", tablet: "1.5rem" }, fontFamily: 'Poppins', fontWeight: "800" }}>Popular Brands</Typography>
@@ -28,10 +29,11 @@ const Brands = () => {
                   mobile: "5vh", tablet: '6vh',
                   laptop: "8vh", desktop: "15vh"
                 },
-                width: "11vw"
+                width: "11vw",
+                
               }}
               alt=""
-              src='../Assests/Brand3.png' />
+              src='../Assests/Brand3_adobe_express.svg' />
 
             {/* brand image 2 */}
 

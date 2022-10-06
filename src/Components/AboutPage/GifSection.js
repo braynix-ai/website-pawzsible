@@ -17,11 +17,11 @@ const GifSection = () => {
   return (
 
 
-    <Box sx={{ width: "100%", height: '100%', marginBottom: '150px' }}>
+    <Box sx={{ width: "100%", height: '100%', objectFit: 'contain', marginBottom: '20px' }}>
 
       <Slider {...settings}>
 
-        <img src="../Assests/aboutgif.gif" alt="aboutgif" style={{ width: '100%', height: '100%' }} />
+        <img src="../Assests/aboutgif.gif" alt="aboutgif" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
 
       </Slider>
 

@@ -118,9 +118,9 @@ const styles = {
         alignItems: "center",
         justifyContent: ["center", "center", "center", "start"],
         flexDirection: ["column", "column", "column", "row"],
-        columnGap: '0.5vw',
+        columnGap: '4vw',
         button: {
-            fontSize: '120%',
+            fontSize: { xs: '2vw', sm: '1.1vw' },
             cursor: "pointer",
             mx: [0, 0, 0, 10, 18, 20],
             my: [15, 15, 15, 0],
@@ -131,7 +131,7 @@ const styles = {
             color: "black",
             px: 0,
             py: "2px",
-            fontWeight: 500,
+            fontWeight: 1000,
             "&::before": {
                 content: "''",
                 position: "absolute",
@@ -192,19 +192,10 @@ const NavLinks = ({ closeMenu = undefined }) => {
         <Flex sx={styles.navlinkContainer} className="navLinksContainer">
             <Link href="/AboutUs"><Button onClick={closeMenu}>About Us</Button></Link>
             <Link href="/Teams"><Button onClick={closeMenu} >Teams</Button></Link>
-            <Link href="/Feed"><Button onClick={closeMenu} >Feed</Button></Link>
-            <Link href="/Groom"><Button onClick={closeMenu}>Groom</Button></Link>
+            <Link href="/Feed"><Button onClick={closeMenu} >Feed Your Dog</Button></Link>
+            <Link href="/Groom"><Button onClick={closeMenu}>Groom Your Dog</Button></Link>
             <Link href="/"><Button onClick={closeMenu}>Testimonial</Button></Link>
             <Link href="/TalkSection"><Button onClick={closeMenu}>Join Us</Button></Link>
-            <Button variant="outlined"
-                sx={{
-                    fontWeight: 'bold',
-                    color: "black",
-                    width: '20vw',
-                    border: "1px solid black", marginLeft: 'auto', fontFamily: "poppins"
-                }}>
-                Consult a Vet
-            </Button>
         </Flex>
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import CardSection from '../Feed Your Dog/CardSection'
 
 import Feed from '../Feed Your Dog/Feed'
 import GroomSection from '../Groom You Dog/GroomSection'
@@ -11,17 +10,14 @@ import Working from "../Stepper/Working"
 const Home = () => {
   return (
     <>
+      <Hero />
 
       <Feed />
-
-      <CardSection />
       <Brands />
       <GroomSection />
 
       <TalkSection />
       <Working />
-      <Hero />
-
 
     </>
   )

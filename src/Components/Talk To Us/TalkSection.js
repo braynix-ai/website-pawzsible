@@ -8,34 +8,25 @@ function TalkSection() {
     <>
       <ThemeProvider theme={theme}>
         <Content>
-          <Box sx={{ textAlign: 'center', margin: "30px 0", fontFamily: 'poppins', padding: '10px' }} >
-            <Typography component="div" variant="h4" sx={{ fontWeight: 'bolder', marginBottom: '3%', fontSize: { mobile: "25px", tablet: "30px", desktop: "40px" } }}>
-              Talk to Us
-
+          <Box sx={{ textAlign: 'center', fontFamily: 'poppins', paddingTop: '40px' }} >
+            <Typography sx={{ fontWeight: '1000', marginBottom: '1%', fontFamily: 'poppins', fontSize: { mobile: "2rem", tablet: "3rem", desktop: "4rem" } }}>
+              <b> Talk to Us! </b>
             </Typography>
-
-            <Typography component="div" variant="p" sx={{ fontFamily: 'poppins', fontSize: { mobile: "13px", tablet: "15px", desktop: "19px" } }}>
-              Now, save the travel and take Online Doctor Consultation
-
+            <Typography component="div" variant="p" sx={{ fontFamily: 'poppins', fontSize: { mobile: "1rem", tablet: "1.5rem", desktop: "2rem" } }}>
+              <b>Now, save the travel and take Online Doctor Consultation</b>
             </Typography>
           </Box>
           <CardContainer>
-
-
-
             <CardContent sx={{ paddingLeft: { desktop: "80px", tablet: "60px", mobile: "10px" } }}>
-              <Title sx={{ marginTop: { desktop: "40px", mobile: "20px" }, fontSize: { desktop: "30px", tablet: "25px", mobile: "15px" } }} >We Intend to keep your Dog
+              <Title sx={{ marginTop: { desktop: "40px", mobile: "20px" }, fontSize: { mobile: "1rem", tablet: "1.5rem", desktop: "2rem" } }} >We Intend to keep your Pet
                 Healthy!</Title>
-              <Text sx={{ paddingTop: '10px', fontSize: { desktop: "15px", tablet: "14px", mobile: "9px" } }}>Get on a Video Call or have a Chat with a Vet! </Text>
-              <Text sx={{ marginTop: "15px", fontSize: { desktop: "15px", tablet: "14px", mobile: "9px" } }}>Prices start at just ₹ 199 </Text>
+              <Text sx={{ paddingTop: '10px', fontSize: { mobile: "0.75rem", tablet: "1.5rem", desktop: "1.75rem" } }}>Get on a <b>Video Call</b> or have a <b>Chat</b> with a Vet! </Text>
+              <Text sx={{ marginTop: "15px", fontSize: { mobile: "0.75rem", tablet: "1.5rem", desktop: "2rem" } }}>Prices start at just ₹ 199 </Text>
               <Box sx={{ display: "flex", alignItems: "center", marginTop: { desktop: "30px", tablet: "25px", mobile: "15px" } }}>
                 <Box
                   component="img"
                   sx={{
-
-                    height: { desktop: "25px", mobile: "3vh", tablet: "20px" },
-
-                    width: { mobile: "18px", desktop: "25px", tablet: "20px" }
+                    width: { mobile: "3vw", desktop: "4wv", tablet: "3.5vw" }
                   }}
                   alt=""
                   src='../Assests/profile1.png'
@@ -43,49 +34,38 @@ function TalkSection() {
                 <Box
                   component="img"
                   sx={{
-
-                    height: { desktop: "25px", mobile: "18px", tablet: "20px" },
-
-                    width: { mobile: "18px", desktop: "25px", tablet: "20px" }
+                    width: { mobile: "3vw", desktop: "4wv", tablet: "3.5vw" }
                   }}
                   alt=""
                   src='../Assests/profile2.png'
                 />
 
-                <Text sx={{ fontSize: { desktop: "15px", tablet: "14px", mobile: "9px" } }} >Over 250 Vets available!</Text>
+                <Text sx={{ fontSize: { mobile: "0.75rem", tablet: "1rem", desktop: "1.5rem" } }} >Over 250 Vets available!</Text>
               </Box>
 
-              <Box sx={{ marginTop: "5%", display: "flex", justifyContent: "flex-start", width: "30vw", fontFamily: 'poppins' }}>
+              <Box sx={{ marginTop: "5%", display: "flex", justifyContent: "flex-start", fontFamily: 'poppins', bottom: '0', marginBottom: { mobile: "0", tablet: "5%", desktop: "7%" } }}>
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   <Box
                     component="img"
                     sx={{
-
-                      height: "auto",
-
-                      width: "2vw"
+                      width: "4vw"
                     }}
                     alt=""
                     src='../Assests/Guarantee.png' />
-
-
-
-                  <Text sx={{ fontSize: { desktop: "0.75", tablet: "0.5rem", mobile: "0.25rem" } }}>Verified Doctors</Text>
+                  <Text sx={{ fontSize: { mobile: "0.5rem", tablet: "0.75rem", desktop: "1rem" } }}>Verified Doctors</Text>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   <Box
                     component="img"
                     sx={{
 
-                      height: "auto",
-
-                      width: "2vw"
+                      width: "4vw"
                     }}
                     alt=""
                     src='../Assests/Note.png' />
 
 
-                  <Text sx={{ fontSize: { desktop: "0.75", tablet: "0.5rem", mobile: "0.25rem" } }}>Digital Prescriptions</Text>
+                  <Text sx={{ fontSize: { mobile: "0.5rem", tablet: "0.75rem", desktop: "1rem" } }}>Digital Prescriptions</Text>
 
                 </Box>
               </Box>
@@ -93,17 +73,18 @@ function TalkSection() {
 
             {/* image part */}
             <CardImage >
-
+              {/* <Box component="img" src='../Assests/Vector-6.svg'alt="background" sx={{position:'absolute',right:'%',bottom:'0',width:{mobile: "40vw", tablet: "40vw", desktop: "50vw"}, height:'100%'}}/>
+  <Box component="img" src='../Assests/image 26.png' alt="image" sx={{width:{mobile: "40vw", tablet: "35vw", desktop: "40vw"},position:'absolute',bottom:'0',right:'0'}} /> */}
               <Box
                 component="img"
                 sx={{
-
-                  height: "auto",
-
-                  width: "45vw"
+                  height: {mobile:'60%',tablet:'100%'},
+                  width: '100%',
+                  objectFit: 'contain',
+                  position: 'absolute', bottom: '0', right: '0'
                 }}
                 alt=""
-                src='../Assests/image 26.png' />
+                src='../Assests/image 26.svg' />
             </CardImage>
 
 

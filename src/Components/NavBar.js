@@ -11,9 +11,9 @@ const styles = {
         justifyContent: "space-between",
         px: [10, 10, 10, 10, 50],
         py: [10, 10, 10, 20],
-        position: "sticky",
+        position: "relative",
         top: 0,
-        backgroundColor: "#ffddac",
+        backgroundColor: "white",
         backdropFilter: "blur(4px)",
         boxShadow: "0 0 20px #1D1E1F1F",
         zIndex: 10,
@@ -63,7 +63,7 @@ const Navbar = () => {
 
     return (
         <Flex sx={styles.navbar} as="nav">
-            <Link href="/"><img src="../Assests/logo 1.png" style={{ height: "8vh", marginTop: '5px' }} alt="logo"/></Link>
+            <Link href="/"><img src="../Assests/logo 1.svg" style={{ height: "4vh" }} alt="logo" /></Link>
             {breakpointIndex > 2 ? <NavLinks /> :
                 <AnimatePresence>
                     {showMenu &&

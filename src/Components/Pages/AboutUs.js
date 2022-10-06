@@ -9,6 +9,7 @@ const AboutUs = () => {
       <Story />
       <GifSection />
       <Value />
+
     </>
   )
 }
